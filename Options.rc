@@ -1,0 +1,148 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (Canada) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENC)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_CAN
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_WRDIALOG DIALOGEX 0, 0, 267, 213
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "WinampRING Options"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "&OK",IDOK,56,192,48,14
+    PUSHBUTTON      "&Close",IDCANCEL,108,192,48,14
+    PUSHBUTTON      "&Apply",IDC_APPLY,160,192,48,14,WS_DISABLED
+    PUSHBUTTON      "A&bout",IDC_ABOUT,212,192,48,14
+    GROUPBOX        "Action to take on ring",IDC_GRENABLE,7,5,253,183,WS_GROUP
+    CONTROL         "&Enabled",IDC_CHKENABLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,194,40,10
+    CONTROL         "&Lower Volume",IDC_VOLUME,"Button",BS_AUTORADIOBUTTON,15,22,60,11
+    CONTROL         "&Pause Winamp",IDC_PAUSE,"Button",BS_AUTORADIOBUTTON,15,42,60,11
+    CONTROL         "&Stop Winamp",IDC_STOP,"Button",BS_AUTORADIOBUTTON,15,62,55,11
+    GROUPBOX        "Volume Options",IDC_GRVOL,80,15,169,65
+    CONTROL         "Slider1",IDC_SVOL,"msctls_trackbar32",TBS_NOTICKS | WS_TABSTOP,85,36,157,11
+    LTEXT           "Volume to change to:",IDC_VOLLABEL,90,26,69,10
+    LTEXT           "Modem COM Port:",IDC_COMLABEL,20,150,60,10
+    EDITTEXT        IDC_EDITPORT,80,148,18,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Pop&up message on ring",IDC_CHKPOPUP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,83,90,10
+    CONTROL         "Change &Windows volume",IDC_CHKWINVOL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,137,62,97,14
+    CONTROL         "Per&cent of current volume",IDC_CHKPERCENT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,137,50,96,12
+    EDITTEXT        IDC_EDITVOL,89,50,35,12,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "Popup Options",IDC_GRPOPUP,104,82,145,41
+    CONTROL         "Enable caller &ID support on modem",IDC_CHKCALLERID,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,109,93,126,10
+    LTEXT           "Code to enable caller ID:",IDC_CALLIDLABEL,108,107,78,10
+    EDITTEXT        IDC_EDITCALLERID,188,105,56,12,ES_AUTOHSCROLL
+    LTEXT           "Init code:",IDC_INITLABEL,20,166,31,10
+    EDITTEXT        IDC_EDITINIT,52,165,55,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "R",IDC_DOACTION,250,122,10,9,NOT WS_VISIBLE
+    GROUPBOX        "Ring detection",IDC_GRDETECT,13,124,236,57
+    CONTROL         "Modem",IDC_MODEM,"Button",BS_AUTORADIOBUTTON,20,134,39,10
+    CONTROL         "SIP",IDC_SIP,"Button",BS_AUTORADIOBUTTON,125,134,27,10
+    EDITTEXT        IDC_SIPPORT,143,146,40,14,ES_AUTOHSCROLL
+    LTEXT           "Port:",IDC_SIPPORTLABEL,126,148,16,8
+END
+
+IDD_ABOUT DIALOGEX 0, 0, 248, 212
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About WinampRING"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,90,196,50,14
+    EDITTEXT        IDC_ABOUTEDIT,5,5,237,169,ES_MULTILINE | ES_READONLY | WS_VSCROLL
+    CTEXT           "WinampRING v1.1\n©2006 Gabriel Luci",IDC_STATIC,5,177,218,16
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_WRDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 260
+        VERTGUIDE, 13
+        VERTGUIDE, 20
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 206
+        HORZGUIDE, 25
+        HORZGUIDE, 44
+        HORZGUIDE, 64
+        HORZGUIDE, 134
+    END
+
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 241
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 205
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (Canada) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
