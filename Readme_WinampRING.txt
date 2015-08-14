@@ -1,11 +1,12 @@
-		 WinampRING v1.1
+		 WinampRING v1.5
 	     Created and written by Gabriel Luci.
-		http://www.luci.ca/
 
 Special thanks to Dan Homorcean for debugging help.
-Please send comments and error reports through my website listed above.
 
 WHAT'S NEW?
+v1.5
+New: SIP support
+
 v1.1
 New: Added caller ID support.
 New: Modem initialization code can now be changed.
@@ -53,6 +54,9 @@ This is the COM port your modem is on. It is required for usability.
 
 INIT CODE
 The code necessary to initialize the modem. For most modems, the default should be sufficient. If an error is produced saying that WinampRING cannot initialize the modem, you will have to find the proper code for your modem from your modem's manual or the internet and enter it in this field.
+
+SIP PORT
+The UDP port to listen on for a SIP INVITE. To be able to use this, you must configure your VoIP provider to send a call to a SIP URI, which will be your IP address. This port will also need to be allowed by your router. Currently, it only listens on IPv4.
 
 POPUP MESSAGE ON RING
 This will cause WinampRING to display a popup message when the phone rings simply stating "The phone is ringing!" with the time and date that it occurred. Caller ID information will be displayed as well, if the feature is enabled.

@@ -2,10 +2,10 @@
 !include "MUI.nsh"
 
 ; The name of the installer
-Name "WinampRING 1.1"
+Name "WinampRING 1.5"
 Var NAME
 Function .onInit
-  StrCpy $NAME "WinampRING 1.1" ; this should always be the same as the name of the installer
+  StrCpy $NAME "WinampRING 1.5" ; this should always be the same as the name of the installer
 FunctionEnd
 
 ; The file to write
@@ -54,15 +54,6 @@ Section ""
   File "..\Readme_WinampRING.txt"
 
   WriteRegStr HKCU "Software\WinampRING" "InstallPath" "$INSTDIR"
-  WriteRegStr HKCU "Software\WinampRING" "Volume" "25"
-  WriteRegStr HKCU "Software\WinampRING" "COMPort" "1"
-  WriteRegStr HKCU "Software\WinampRING" "Percent" "0"
-  WriteRegStr HKCU "Software\WinampRING" "Popup" "0"
-  WriteRegStr HKCU "Software\WinampRING" "ChWinVol" "0"
-  WriteRegStr HKCU "Software\WinampRING" "Enabled" "1"
-  WriteRegStr HKCU "Software\WinampRING" "Action" "122"
-  WriteRegStr HKCU "Software\WinampRING" "CallerID" "0"
-  WriteRegStr HKCU "Software\WinampRING" "CallerIDInit" "AT#CID=1$\r"
 
   ; Write the uninstall keys for Windows
   WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\WinampRING" "DisplayName" "$NAME"
